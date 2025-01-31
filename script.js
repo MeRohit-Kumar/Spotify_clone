@@ -70,8 +70,8 @@ const makeAllPlays = () => {
     });
 };
 
-document.addEventListener('click', (e) => {
-    if (e.target && e.target.classList.contains('songItemPlay')) {
+Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) => {
+    element.addEventListener('click', (e) => {
         makeAllPlays();
         songIndex = parseInt(e.target.id);
         e.target.classList.remove('fa-play-circle');
@@ -83,7 +83,7 @@ document.addEventListener('click', (e) => {
         gif.style.opacity = 1;
         masterPlay.classList.remove('fa-play-circle');
         masterPlay.classList.add('fa-pause-circle');
-    }
+    });
 });
 
 // Handle Next/Previous
