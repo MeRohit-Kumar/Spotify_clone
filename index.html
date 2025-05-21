@@ -1,45 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify - Your Favourite Music is Here</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
-</head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify - Your Favourite Music is Here</title>
+  <link rel="stylesheet" href="style.css" />
+<script src="https://kit.fontawesome.com/f8409e00fa.js" crossorigin="anonymous"></script></head>
 <body>
-    <nav>
-        <ul>
-            <li class="brand"><img src="logo.png" alt="Spotify"> Spotify</li>
-            <li>Home</li>
-            <li>About</li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li class="brand"><img src="logo.png" alt="Spotify" /> Spotify</li>
+      <li>Home</li>
+      <li>About</li>
+    </ul>
+  </nav>
 
-    <div class="container">
-        <div class="songList">
-            <h1>Best of NCS - No Copyright Sounds</h1>
-            <div class="songItemContainer">
-                <!-- Loop to display songs -->
-                
-            </div>
-        </div>
-        <div class="songBanner"></div>
+  <div class="container">
+    <div class="songList">
+      <h1>Best of NCS - No Copyright Sounds</h1>
+      <div class="songItemContainer"></div>
     </div>
+  </div>
 
-    <div class="bottom">
-        <input type="range" id="myProgressBar" min="0" value="0" max="100">
-        <div class="icons">
-            <i class="fas fa-3x fa-step-backward" id="previous"></i>
-            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
-            <i class="fas fa-3x fa-step-forward" id="next"></i> 
-        </div>
-        <div class="songInfo">
-            <img src="play.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Warriyo - Mortals [NCS Release]</span>
-        </div>
+  <div class="bottom">
+    <div class="controls">
+      <i class="fas fa-random" id="shuffleBtn" title="Shuffle"></i>
+      <i class="fas fa-step-backward fa-2x" id="previous"></i>
+      <i class="far fa-play-circle fa-2x" id="masterPlay"></i>
+      <i class="fas fa-step-forward fa-2x" id="next"></i>
+      <i class="fas fa-redo" id="repeatBtn" title="Repeat"></i>
     </div>
-    
-    <script src="script.js"></script>
+    <input type="range" id="myProgressBar" min="0" value="0" max="100" />
+    <div class="songInfo">
+      <img src="play.gif" width="42px" alt="" id="gif" style="opacity:0;" />
+      <span id="masterSongName">Select a song to play</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
